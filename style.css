@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(to right, #08D3F9 , #0961A6);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-rendering: optimizeLegibility;
+}
+
+/** {*/
+    /*border: 1px solid pink;*/
+/*}*/
+
+.jumbotron {
+    background-color: transparent;
+    margin-top: 30px;
+}
+
+#a {
+  background-color: #C2350C;
+}
+
+.a-active {
+    background-color: #ff9999;
+}
+
+#b {
+    background-color: #7CA82A;
+}
+
+.b-active {
+    background-color: #b3d586;
+}
+
+#c {
+    background-color: #5BA2BC;
+}
+
+.c-active {
+    background-color: #82d2df;
+}
+
+#d {
+    background-color: #CFA52E;
+}
+
+.d-active {
+    background-color: #efd48c;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 15px;
+    float:right;
+}
+
+td {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px black;
+}
+
+button {
+    display: block;
+}
+
+.btn-cont {
+    margin-bottom: 10px;
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+
+#big-title {
+    font-size: 5em;
+    margin: 0;
+    position: absolute;               /* 2 */
+    top: 50%;                         /* 3 */
+    transform: translate(0, -50%)
+}
+
+.big-title-cont {
+    height: 15em;
+    position: relative
+}
+
+.strict-restart-cont {
+    text-align: right;
+}
+
+h2 {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    table {
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #big-title {
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        width: 85vw;
+    }
+    .btn-cont, .strict-restart-cont {
+        float: none;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    td, tr {
+        z-index: 99;
+    }
+
+}

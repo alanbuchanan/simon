@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/blitzer/jquery-ui.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>    <script src="bower_components/howler.js/howler.min.js"></script>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Simon</title>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron col-sm-12 col-xs-12">
+
+        <div class="col-sm-6 col-xs-12 table-cont">
+            <table>
+                <tr>
+                    <td id="a"></td>
+                    <td id="b"></td>
+                </tr>
+                <tr>
+                    <td id="c"></td>
+                    <td id="d"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!--<div class="col-sm-6 btn-cont">-->
+            <!--<button class="btn-success">Start</button>-->
+        <!--</div>-->
+        <div class="col-sm-6 col-xs-12 big-title-cont">
+            <span id="big-title">Simon10</span>
+        </div>
+        <div class="col-sm-12 col-xs-12 btn-cont">
+            <div class="col-sm-6 strict-restart-cont">
+                <h6>Strict mode? <input type="checkbox" id="strict" name="strictMode"/></h6>
+                <h6><button class="btn btn-warning">Restart</button></h6>
+            </div>
+            <div class="col-sm-6 col-xs-12 btn-cont">
+                <h2><span id="whoseTurn"></span></h2>
+                <h4>Round <span id="roundNumber">1</span></h4>
+                <h5>Wins: <span id="winCount">0</span></h5>
+                <h6>Losses: <span id="lossCount">0</span></h6>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <div id="trapezoid"></div>
+</body>
+</html>
